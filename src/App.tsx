@@ -10,7 +10,6 @@ import ProtectedRoute from './component/ProtectedRoute';
 export default function App() {
   const isAuth = useSelector((state: RootState) => state.user?.authenticated); 
 
-  console.log(isAuth);
   
   return (
     <BrowserRouter>
