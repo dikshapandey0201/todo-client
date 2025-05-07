@@ -36,9 +36,13 @@ export default function UserMenu() {
         type: 'success',
         onClose: () => setToast(null),
       });
-    }
+    
     dispatch(clearUser());
-    window.location.href = '/';
+    }
+    else{
+      alert('Failed to logout')
+      return
+    }
   }
   function handleProfile() {
     navigate('/profile');
