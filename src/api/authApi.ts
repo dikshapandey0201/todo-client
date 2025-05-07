@@ -42,7 +42,7 @@ export async function logout() {
         headers: {
         'Content-Type': 'application/json',
         },
-        
+        credentials: 'include',
     });
     return response.json();
 }
@@ -54,6 +54,7 @@ export async function updateUser(name: string, email: string) {
         'Content-Type': 'application/json',
         },
         body: JSON.stringify({ name, email }),
+        credentials: 'include',
     });
     return response.json();
 }
@@ -64,6 +65,7 @@ export async function deleteUser() {
         headers: {
         'Content-Type': 'application/json',
         },
+        credentials: 'include',
     });
     return response.json();
 }
