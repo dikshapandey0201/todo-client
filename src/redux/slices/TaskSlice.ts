@@ -29,7 +29,7 @@ interface UpdateTaskRequest {
 
 export const tasksApi = createApi({
   reducerPath: "tasksApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/api/tasks" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://todo-list-server-6rzb.onrender.com/api/tasks" }),
   tagTypes: ["Tasks"],
   endpoints: (builder) => ({
     getTasks: builder.query<{totalTasks:number,totalPages: number; tasks: Task[] 
