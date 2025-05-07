@@ -113,7 +113,7 @@ export default function DragAndDrop() {
     if (!tasks) {
         return <div>No tasks found</div>;
     }
-    console.log(tasks);
+    
     return (
 
         <div className="flex flex-col items-center bg-gray-100 dark:bg-gray-900 h-screen p-4">
